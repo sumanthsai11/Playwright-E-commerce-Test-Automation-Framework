@@ -1,0 +1,10 @@
+{
+  "name": "staging",
+  "clientUrl": "",
+  "apiBaseUrl": "",
+  "practiceLoginUrl": "",
+  "practicePageUrl": "",
+  "calendarUrl": "",
+  "angularFormUrl": "",
+  "productId": ""
+}

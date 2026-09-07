@@ -1,0 +1,38 @@
+{
+  "name": "playwright-ecommerce-test-framework",
+  "version": "1.0.0",
+  "description": "Playwright E-commerce Test Automation Framework — POM, locators, fixtures, multi-env config, and CI reporting.",
+  "author": "",
+  "license": "MIT",
+  "scripts": {
+    "test": "npx playwright test --project=chromium",
+    "test:dev": "ENV=dev npx playwright test --project=chromium",
+    "test:qa": "ENV=qa npx playwright test --project=chromium",
+    "test:staging": "ENV=staging npx playwright test --project=chromium",
+    "test:all-browsers": "npx playwright test",
+    "test:e2e": "npx playwright test --project=chromium --grep @e2e",
+    "test:api": "npx playwright test --project=chromium --grep @api",
+    "test:ui": "npx playwright test --project=chromium --grep @ui",
+    "test:intercept": "npx playwright test --project=chromium --grep @intercept",
+    "test:headed": "npx playwright test --project=chromium --headed",
+    "test:debug": "npx playwright test --project=chromium --debug",
+    "report": "npx playwright show-report reports/html-report",
+    "allure:generate": "npx allure generate allure-results --clean -o reports/allure-report",
+    "allure:open": "npx allure open reports/allure-report"
+  },
+  "keywords": [
+    "playwright",
+    "test-automation",
+    "page-object-model",
+    "api-testing",
+    "ci-cd"
+  ],
+  "engines": {
+    "node": ">=18"
+  },
+  "devDependencies": {
+    "@playwright/test": "1.62.1",
+    "allure-playwright": "3.11.0",
+    "dotenv": "17.4.2"
+  }
+}
